@@ -1,0 +1,281 @@
+body {
+    height: 100vh; /* Hauteur complète */
+    margin: 0; /* Pas de marge */
+    background: linear-gradient(to right, #00bfff, #8a2be2); /* Dégradé */
+    display: flex; /* Disposition en flexbox */
+    justify-content: center; /* Centrer le contenu horizontalement */
+    align-items: center; /* Centrer le contenu verticalement */
+    padding: 20px; /* Padding autour du contenu */
+    box-sizing: border-box;
+}
+
+.content {
+    background-color: #191970; /* Fond bleu foncé */
+    border-radius: 16px; /* Coins arrondis */
+    min-height: 900px; /* Hauteur minimum */
+    min-width: 1180px; /* Largeur minimum */
+    display: flex; /* Flexbox pour le contenu intérieur */
+    flex-direction: column; /* Empilement vertical */
+    justify-content: center; /* Centre le contenu */
+    align-items: center; /* Centre verticalement */
+    border: 10px solid rgba(252, 248, 248, 0.05); /* Bordure blanche visible */
+    color: white; /* Couleur du texte */
+}
+
+.header {
+    display: flex; /* Flexbox pour l'en-tête */
+    justify-content: space-between; /* Espace entre les éléments */
+    align-items: center; /* Centre les éléments verticalement */
+    min-width: 1100px; /* Largeur minimum */
+    padding: 16px; /* Padding interne */
+}
+
+.input {
+    margin-left: 50px; /* Espace à gauche */
+}
+
+.profile-container {
+    width: 50px; /* Largeur du conteneur */
+    height: 50px; /* Hauteur du conteneur */
+    overflow: hidden; /* Masquer le débordement */
+    border-radius: 50%; /* Forme circulaire */
+    display: flex; /* Flexbox pour l'image */
+    justify-content: center; /* Centre l'image horizontalement */
+    align-items: center; /* Centre l'image verticalement */
+}
+
+.profile-image {
+    width: 100%; /* Image prend toute la largeur */
+    height: auto; /* Conserve le ratio d'aspect */
+}
+
+.money {
+    align-self: flex-end; /* Aligne à l'extrémité */
+    margin-left: auto; /* Pousse à droite */
+    margin-right: 50px; /* Espace à gauche */
+    min-width: 100px;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    border: 2px solid; /* Épaisseur de la bordure */
+    border-image: linear-gradient(45deg, #00bfff, #8a2be2) 1;
+    
+}
+
+.block {
+    display: flex;
+    min-width: 1180px;
+    min-height: 800px;
+    align-items: center;
+    margin-top: auto; /* Espace au-dessus */
+    justify-content: space-between;
+}
+
+.lien {
+    width: 50px; /* Largeur des liens */
+}
+
+.link {
+    display: flex;
+    flex-direction: column; /* Disposition verticale des liens */
+    margin-left: 5px; /* Espace à gauche */
+}
+
+.fond {
+    display: flex;
+    border: 10px solid gray; /* Bordure grise */
+    min-height: 800px;
+    min-width: 1100px;
+    border-radius: 32px; /* Coins arrondis */
+    background-image: url(./image/fond.png); /* Image de fond */
+    background-color: #191970; /* Couleur de fond de secours */
+    background-size: cover; /* Couvre entièrement l'élément */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+    flex-direction: column; /* Orientation verticale */
+    justify-content: center; /* Centre le contenu */
+    align-items: center; /* Centre verticalement */
+}
+
+.i-logo {
+    width: 50px; /* Largeur du logo */
+    height: auto; /* Conserve le ratio d'aspect */
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+
+.main {
+    display: flex;
+    min-width: 1100px;
+    min-height: 300px;
+    justify-content: space-between; /* Espace entre les éléments principaux */
+    align-items: center;
+    margin-top: 30px; /* Espace au-dessus */
+}
+
+.choix {
+    width: 50px; /* Largeur des choix */
+}
+
+.les-choix {
+    display: flex;
+    align-items: center; /* Aligne les choix en bas */
+    justify-content: space-between; /* Espace entre les choix */
+    min-width: 1050px; /* Largeur minimum */
+}
+
+.choix1 {
+    display: flex;
+    background-color: gray; /* Couleur de fond des choix */
+    border-radius: 16px; /* Coins arrondis */
+    margin: 10px; /* Espace autour des choix */
+    min-width: 200px; /* Largeur minimum */
+    justify-content: center; /* Centre le contenu */
+    align-items: center; /* Centre verticalement */
+
+}
+
+.main-joueur,
+.main-ordi {
+    height: 200px; /* Hauteur des zones principales */
+    width: 400px; /* Largeur des zones principales */
+    display: flex;
+    justify-content: center; /* Centre le contenu */
+    align-items: center; /* Centre verticalement */
+}
+
+.verification {
+    min-height: 50px;
+    min-width: 50px;
+    align-self: flex-start; /* Aligne en haut à gauche */
+    margin-top: 10px; /* Légèrement au-dessus */
+    margin-left: 20px; /* Espace à gauche */
+    border-radius: 12px; /* Coins arrondis */
+    background-image: url(./image/verif.png); /* Image de vérification */
+    background-size: cover; /* Couvre le conteneur */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+    background-color: gray; /* Couleur de fond de secours */
+}
+
+.reference {
+    display: flex;
+    min-width: 800px; /* Largeur minimum */
+    justify-content: space-between; /* Espace entre les éléments */
+    margin-top: 20px; /* Espace au-dessus */
+    align-items: center; /* Centre verticalement */
+    padding: 12px; /* Padding interne */
+}
+
+.time {
+    display: flex;
+    flex-direction: column; /* Orientation verticale */
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+}
+
+.etoile {
+    display: flex;
+    min-width: 800px; /* Largeur minimum */
+    justify-content: space-between; /* Espace entre les éléments */
+    align-items: center; /* Centre verticalement */
+}
+
+.d-etoile {
+    width: 100px; /* Largeur du conteneur */
+    height: 50px; /* Hauteur du conteneur */
+    overflow: hidden; /* Masque le débordement de l'image */
+    display: flex;
+    align-items: center; /* Centre verticalement */
+    justify-content: center; /* Centre horizontalement */
+}
+
+.etoile1,
+.etoile2 {
+    width: 100%; /* Prend toute la largeur du conteneur */
+    height: auto; /* Conserve le ratio d'aspect */
+    object-fit: cover; /* Remplit le conteneur sans déformation */
+}
+
+.input1 {
+    border-radius: 12px; /* Coins arrondis */
+    border: transparent; /* Pas de bordure */
+    background-color: gray; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    width: 300px; /* Largeur du champ */
+    height: 20px; /* Hauteur du champ */
+    padding: 10px; /* Padding interne */
+}
+
+.input1::placeholder {
+    color: white; /* Couleur du placeholder */
+}
+
+.i-main {
+    width: 100%; /* Prend toute la largeur */
+    height: auto; /* Conserve le ratio d'aspect */
+    object-fit: cover; /* Remplit le conteneur sans déformation */
+}
+
+#seconds,
+.text{
+    font-family: "Montserrat Subrayada", sans-serif;
+    font-size: 50px; /* Ajuste la taille selon tes besoins */
+    font-weight: bolder;
+    color: #fff; /* Ajuste la couleur */
+}
+
+.nom{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    font-style: normal;
+}
+
+.money-title{
+    font-family: "Montserrat Subrayada", sans-serif;
+    font-size: 15px; /* Ajuste la taille selon tes besoins */
+    font-weight: bold;
+    color: #fff; /* Ajuste la couleur */
+}
+
+.money-val{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.declaration{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    gap: 16px;
+}
+
+button{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    font-style: normal;
+    background-color: aqua;
+    border: transparent;
+    border-radius: 16px;
+    height: 40px;
+    width: 200px;
+    color: #fff;
+}
+
+.text1{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+}
+
